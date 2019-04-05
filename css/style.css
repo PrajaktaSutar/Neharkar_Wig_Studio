@@ -7,7 +7,7 @@ h1 { font-size: 30px; line-height: 1.6; }
 h2 { font-size: 26px; }
 h3 { font-size: 20px; line-height: 1.5; }
 h4 { font-size: 15px; }
-p { margin: 0 0 20px; }
+p { margin: 0 0 20px;color:#4d4d4d }
 ul, ol { }
 ul li, ol li { }
 a { color: #00a6e3; text-decoration: none; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
@@ -85,7 +85,7 @@ button.btn { height: 47px; padding: 10px 40px; }
 /*Note: Section space help to create top bottom space;*/
 
 .space-small { padding-top: 40px; padding-bottom: 40px; }
-.space-medium { padding-top: 80px; padding-bottom: 80px; }
+.space-medium { padding-top: 80px; }
 .space-large { padding-top: 100px; padding-bottom: 100px; }
 .space-ex-large { padding-top: 120px; padding-bottom: 120px; }
 
@@ -197,7 +197,7 @@ button.btn { height: 47px; padding: 10px 40px; }
     width: 3%;
     position: absolute;
     bottom: -2px;
-    left: 560px;};
+    left: 49%;};
 /*-- Features block class--*/
 
 .feature { }
@@ -501,13 +501,14 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 .dark-line { border-top: 2px solid #575753; }
 .widget-footer { color: #ffffff; }
 .widget-footer ul { }
-.widget-footer ul li { margin-bottom: 5px; }
-.widget-footer ul li a { font-size: 16px; color: #ffffff; }
+.widget-footer ul li { margin-bottom: 15px; }
+.widget-footer ul li a { font-size: 14px; color: #ffffff; }
 .widget-footer ul li a:hover { color: #00a6e3; }
-.footer-title { font-size: 13px; color: #fff; text-transform: uppercase; border-bottom: 1px solid #575753; padding-bottom: 20px; margin-bottom: 19px; }
-.address-text { font-size: 16px; color: #ffffff; display: inline-block; word-break: break-word; }
+.footer-title { font-size: 15px; color: #b5d67a; text-transform: uppercase; border-bottom: 1px solid #575753;     padding-bottom: 8px;margin-bottom: 20px; }
+.address-text { font-size: 14px; color: #ffffff; display: inline-block; word-break: break-word; }
 .footer-logo { border-bottom: 1px solid #575753; padding-bottom: 13px; margin-bottom: 19px; }
 .time-text { }
+/*.fa{color: #a8d67a!important;}*/
 .footer-social { }
 .footer-social ul { }
 .footer-social ul li { font-size: 15px; color: #545450; text-transform: uppercase; font-weight: 600; float: left; }
@@ -518,7 +519,7 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 .tiny-footer { background-color: #30302e; font-size: 12px; padding-top: 6px; padding-bottom: 6px;    color: #fff;text-align: center;}
 .newsletter-form { }
 .newsletter-form .form-control { background-color: #575753; border-color: #575753; }
-
+.footer-about{font-size: 14px; }
 /*-----------------------------------
 9. Pages 
 -------------------------------------*/
@@ -598,7 +599,7 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
 .testimonial-ctn { }
 .testimonial-info {text-align: center; }
 .testimonial-ctn .customer-name { padding-left: 0px; padding-right: 10px; }
-.testimonial-text { font-size: 18px; color: #373433; font-style: italic; line-height: 36px; margin-bottom: 0px; font-family: 'Libre Baskerville', serif;box-shadow: inset 0px 0px 11px 4px #ccccccb3 }
+.testimonial-text {min-height: 276px; font-size: 18px; color: #373433; font-style: italic; line-height: 36px; margin-bottom: 0px; font-family: 'Libre Baskerville', serif;box-shadow: inset 0px 0px 11px 4px #ccccccb3 }
 .testimonial-img-1 { }
 
 /*--------------------------
@@ -648,13 +649,13 @@ img { width: auto; max-width: 100%; height: auto; margin: 0; padding: 0; border:
  10. Blog pages
 --------------------------*/
 .post-holder { }
-.post-img {  }
+.post-img { position: absolute;left: 0; }
 .post-sticky { position: absolute; top: 10px; right: 25px; background: url(../images/sticky.png); width: 28px; height: 35px; z-index: 9; }
 .post-title { border-bottom: 1px solid #f2f1ed; }
-.post-block {position: relative;}
-.post-text{position: absolute;
+.post-block {position: relative;padding: 0 0 0 105px;min-height: 166px;}
+/*.post-text{position: absolute;
     padding-left: 110px;
-    top: 0;}
+    top: 0;}*/
 .post-header { }
 #post-gallery { margin-bottom: 40px; }
 #post-gallery .owl-pagination { margin-top: -20px; z-index: 1; position: relative; text-align: center; }
@@ -901,7 +902,9 @@ opacity: .5; }
     /* blog single page comments*/
     .childern { padding-left: 0px; }
 }
+@media only screen and (max-width:480px) { .post-block{min-height: auto}}
 @media only screen and (max-width:375px) {
     .slider-captions { position: absolute; bottom: 10px; text-align: center; width: 100%; }
     .slider-title { color: #373433; font-size: 18px; line-height: 21px; }
+   
 }
